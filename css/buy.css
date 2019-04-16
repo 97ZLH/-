@@ -1,0 +1,1402 @@
+/* 购物车 */
+.container {
+	padding-top: 0;
+	background: #fff;
+	line-height: 24px;
+}
+
+.common-emprice {
+	color: #d70000;
+	font-weight: bolder;
+}
+
+.common-activity {
+	cursor: pointer;
+	margin-left: 30px;
+}
+
+.common-activity-title {
+	width: 50px;
+	position: relative;
+	top: 1px;
+	z-index: 10;
+	background: #fff;
+	color: #666;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.common-activity-title-noselect {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.common-activity-item {
+	display: none;
+	width: 350px;
+	border: 1px solid #ddd;
+	position: absolute;
+	padding-top: 5px;
+	background: #fff;
+	color: #666;
+	text-align: left;
+	z-index: 5;
+	padding: 10px 14px 10px 10px;
+}
+
+
+
+.common-activity-item-widget {
+	cursor: pointer;
+}
+
+.price {
+
+	color: #d70000;
+}
+
+.mark-red {
+	color: #d70000;
+}
+
+
+a.activity-manzeng {
+
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+a.activity-manjian {
+	color: #f05356;
+}
+
+a.activity-huangou {
+	background-color: #f05356;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	height: 19px;
+	line-height: 19px;
+	padding: 10px;
+}
+
+a.activity-huangou:HOVER {
+	color: #fff;
+	text-decoration: none;
+	border-radius: 2px;
+	box-shadow: 0 0 3px #5FBFE7;
+}
+
+a.activity-manzeng:hover {
+	color: #e74649;
+	text-decoration: none;
+}
+
+a.activity-coudan {
+	margin: 0px;
+}
+
+.give-activity-book {
+	display: block;
+	float: left;
+	width: 165px;
+	height: 240px;
+	margin: 2.5px;
+	background: #fff;
+	box-shadow: 0 0 3px white;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid white;
+	margin-left: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.give-activity-a1 {
+	display: block;
+	height: 160px;
+	margin: 15px;
+	overflow: hidden;
+}
+
+.give-activity-img {
+	max-height: 160px;
+	max-width: 160px;
+	padding: 5px;
+}
+
+.give-activity-img-select {
+	box-shadow: 0 0 3px #5FBFE7;
+	border: 1px solid #5FBFE7;
+	border-radius: 5px;
+}
+
+.give-activity-a2 {
+	display: block;
+	height: 4em;
+	padding: 0 5px;
+	color: #333;
+	overflow: hidden;
+	font-size: 12px;
+	width: 160px;
+}
+
+.btns {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.btn-ok {
+	font-family: arial, "microsoft yahei";
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	background-color: #e74649;
+	background-image: linear-gradient(to top, #e74649 0, #df3134 100%);
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0 10px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 0;
+	float: none;
+	transition: all .2s ease-out;
+}
+
+.btn-cancel {
+	font-family: arial, "microsoft yahei";
+	cursor: pointer;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	display: inline-block;
+	height: 23px;
+	line-height: 23px;
+	background-color: #f2f2f2;
+	background-image: -moz-linear-gradient(top, #f2f2f2, #f7f7f7);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f2f2f2),
+		color-stop(1, #f7f7f7));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',
+		endColorstr='#f7f7f7', GradientType='0');
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',
+		endColorstr='#f7f7f7');
+	background-image: linear-gradient(to top, #f2f2f2 0, #f7f7f7 100%);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #323333;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0 9px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 0;
+	float: none;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	border: 1px solid #e1e1e1;
+}
+
+.cart-info {
+	padding-top: 0;
+	zoom: 1;
+}
+
+.cart-group {
+	position: relative;
+	margin: 15px 0;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 39px 0px 14px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.cart-group legend:after {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #9da0a4;
+	-webkit-border-radius: 4px 0 4px 0;
+	-moz-border-radius: 4px 0 4px 0;
+	border-radius: 4px 0 4px 0;
+}
+
+.cart-info .box-content {
+	padding-top: 10px;
+}
+
+.buy-tip {
+	height: 25px;
+	margin-bottom: 9px;
+	border-top: 1px solid #FDCDA7;
+	border-bottom: 1px solid #FDCDA7;
+	background: #FFFDE8 url(https://www.wl.cn/resources/img/mall/lamp.png) 26px center no-repeat;
+	color: #D60000;
+	text-indent: 46px;
+	line-height: 25px;
+	overflow: hidden;
+}
+
+.cart-detail {
+	width: 100%;
+	border-top: 0px solid #e6e6e6;
+	border-collapse: collapse;
+	text-align: center;
+	border-top: 0px solid #e6e6e6;
+}
+
+.cart-detail tr {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.cart-list-tr {
+	height: 120px;
+}
+
+.cart-detail th {
+	height: 30px;
+	background: #F4F4F4;
+	color: #333;
+	text-align: center;
+	font-weight: normal;
+}
+/*.cart-detail .col-cover{
+	width: 460px;
+}*/
+.cart-detail .cover-info {
+	position: relative;
+	zoom: 1;
+	min-height: 70px;
+	_height: 70px;
+	padding: 20px 10px 10px 150px;
+}
+
+.cart-detail .book-cover {
+	display: block;
+	position: absolute;
+	left: 45px;
+	top: 10px;
+	width: 58px;
+	height: 78px;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	padding: 3px;
+}
+
+.cart-detail .book-cover img {
+	width: 54px;
+	height: 74px;
+}
+
+.cart-detail .book-name {
+	display: block;
+	color: #136ec2;
+	text-align: left;
+	text-decoration: none;
+	line-height: 18px;
+}
+
+.cart-detail .col-credit {
+	width: 100px;
+	color: #666;
+}
+
+.cart-detail .col-wl-price, .cart-detail .col-discount {
+	width: 100px;
+}
+
+.col-wl-price {
+	padding-top: 2em;
+}
+
+.cart-detail .col-buy-num {
+	width: 100px;
+}
+
+.cart-detail .num-panel {
+	position: relative;
+	zoom: 1;
+	vertical-align: top;
+}
+
+.cart-detail .num-panel .minus {
+	position: relative;
+	zoom: 1;
+	top: 0px;
+	*top: -3px;
+	_top: 0px;
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background: url(https://www.wl.cn/resources/img/mall/minus.png) left top no-repeat;
+	/*text-indent: -10000px;*/
+}
+
+.cart-detail .num-panel input {
+	display: inline-block;
+	width: 30px;
+	height: 14px;
+	line-height: 14px;
+	*margin-left: 7px;
+	border: 1px solid #DDDDDD;
+	color: #111;
+	text-align: center;
+}
+
+.cart-detail .num-panel .plus {
+	display: inline-block;
+	position: relative;
+	zoom: 1;
+	top: 0px;
+	*top: -3px;
+	_top: 0px;
+	width: 9px;
+	height: 9px;
+	background: url(https://www.wl.cn/resources/img/mall/plus.png) left top no-repeat;
+	/*text-indent: -10000px;*/
+}
+
+.cart-detail .col-op a {
+	display: block;
+	margin: 0 35px;
+	color: #136ec2;
+}
+
+.cart-detail tfoot tr {
+	border-bottom: none;
+}
+
+.cart-detail .clear-all {
+	display: block;
+	position: absolute;
+	left: 26px;
+	top: 10px;
+	padding-left: 20px;
+	background: url(../images/cross.png) left center no-repeat;
+	color: #136FC2;
+	line-height: 25px;
+}
+
+.cart-detail .total-price-holder {
+	position: relative;
+	zoom: 1;
+	padding: 10px 45px 10px 700px;
+	text-align: right;
+	line-height: 25px;
+	color: #333;
+}
+
+.cart-detail .total-price-holder .title {
+	display: inline-block;
+}
+
+.cart-detail .total-price-holder .common-price {
+	display: inline-block;
+	width: 55px;
+}
+
+.cart-detail .total-price-holder .sum {
+	font-weight: bolder;
+}
+
+.cart-detail .total-price-holder .price {
+	font-weight: normal;
+	color: #D60000;
+}
+
+.cart-detail .total-price-holder .sb-rmb {
+	color: #D50100;
+}
+
+.cart-detail .total-price-holder .total {
+	font-weight: bolder;
+}
+
+.cart-detail .total-price-holder .go-to-pay {
+	width: 109px;
+	height: 32px;
+	margin-top: 10px;
+	border: none;
+	background: url(https://www.wl.cn/resources/img/mall/go-to-pay.gif) left top no-repeat;
+	text-indent: -10000px;
+	padding: 0;
+}
+
+
+.recommend-books .box-content {
+	padding-top: 2px;
+	padding-bottom: 10px;
+}
+
+.recommend-books .recommend-tip {
+	position: relative;
+	zoom: 1;
+	padding: 0 0 0 886px;
+	height: 29px;
+	border-top: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+	background: #F4F4F4;
+}
+
+.recommend-books .recommend-tip .tip-txt {
+	position: absolute;
+	left: 26px;
+	width: 800px;
+	background: url(https://www.wl.cn/resources/img/mall/lamp.png) left center no-repeat;
+	line-height: 29px;
+	text-indent: 20px;
+}
+
+.recommend-books .recommend-tip .tip-txt strong {
+	color: #136FC2;
+}
+
+.recommend-books .recommend-tip ul {
+	float: left;
+	width: 30px;
+	height: 5px;
+	margin: 12px 5px 0 5px;
+	_margin-top: 9px !important;
+}
+
+.recommend-books .recommend-tip .switch-trigger {
+	float: left;
+	width: 5px;
+	height: 5px;
+	margin: 0 2px;
+	background: url(https://www.wl.cn/resources/img/mall/dot.png) center center no-repeat;
+}
+
+.recommend-books .recommend-tip .current {
+	background: url(https://www.wl.cn/resources/img/mall/dot-current.jpg) center center no-repeat;
+}
+
+.recommend-books .recommend-tip .pre {
+	display: block;
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-top: 6px;
+	_margin-top: 3px !important;
+	background: url(https://www.wl.cn/resources/img/mall/pre.png) center center no-repeat;
+	text-indent: -10000px;
+}
+
+.recommend-books .recommend-tip .next {
+	display: block;
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-top: 6px;
+	_margin-top: 3px !important;
+	background: url(https://www.wl.cn/resources/img/mall/next.png) center center no-repeat;
+	text-indent: -10000px;
+}
+
+.recommend-books .recommend-tip .disabled {
+	cursor: auto;
+}
+.recommend-books .book-list {
+	width: auto;
+	height: 329px;
+	padding: 0 26px;
+}
+
+.recommend-books .book-list li {
+	width: 145px;
+	height: auto;
+	padding: 30px 20px;
+	text-align: center;
+}
+
+.recommend-books .book-list li a {
+	display: block;
+	width: 145px;
+	height: 145px;
+	line-height: 18px;
+	text-align: center;
+	color: #136ec2;
+}
+
+.recommend-books .book-list li .bookName {
+	display: inline-block;
+	width: 100%;
+	height: 36px;
+	overflow: hidden;
+}
+
+.recommend-books .book-list li .old-price {
+	color: #666;
+	text-decoration: line-through;
+	font-family: arial;
+	line-height: 35px;
+}
+
+.recommend-books .book-list li .common-price {
+	font-family: arial;
+}
+
+.recommend-books .book-list li .current-price {
+	color: #D50004;
+	line-height: 35px;
+}
+
+.recommend-books .book-list li .add-to-cart {
+	display: block;
+	width: 86px;
+	height: 23px;
+	margin: 0 auto;
+	border: none;
+	background: url(../../img/mall/btn-addToCart2.png) center center
+		no-repeat;
+	text-indent: -10000px;
+}
+
+.buy-after-buy .recommend-tip .tip-txt strong {
+	color: #333;
+}
+
+.pay-container {
+	color: #333;
+}
+
+.pay-container .box-content {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.pay-tip {
+	height: 24px;
+	margin: 0px 0 2px 0;
+	background-color: #FFFDE8;
+	border-top: 1px solid #FEC091;
+	border-bottom: 1px solid #FEC091;
+	padding: 0 46px;
+	color: #333;
+	line-height: 24px;
+	overflow: hidden;
+}
+
+.pay-holder {
+	color: #333;
+	border: 2px solid #146EC4;
+	padding-bottom: 30px;
+}
+
+.consignee-holder {
+	border-bottom: 1px solid #EAEAEA;
+	padding: 10px 18px 15px 44px;
+}
+
+.delivery-method-holder h2, .pay-method-holder h2, .stockout-holder h2,
+	.book-table-holder h2, .consignee-holder h2 {
+	margin: 10px 0;
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+.consignee-holder a {
+	margin: 0 5px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #136ec2;
+}
+
+.consignee-holder .consignee-list {
+	padding-right: 16px;
+}
+
+.consignee-holder .consignee-list li {
+	padding: 10px 0px 10px 16px;
+}
+
+.consignee-holder .consignee-list li a.update-addr-a {
+	float: right;
+	margin-right: 20px;
+}
+
+.consignee-holder .consignee-list li:hover {
+	border-color: #fff;
+	background-color: #eef7fd;
+}
+
+.consignee-holder .consignee-list li.addr-selected {
+	border: dotted 1px #76c1ef;
+	background-color: #e4f2fc;
+}
+
+.consignee-holder .consignee-list li.addr-selected .addr-street {
+	color: #646464;
+}
+
+.consignee-holder .consignee-list li.addr-selected span {
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.consignee-holder .consignee-list li span.addr-mobile {
+	color: #808080;
+	font-family: "å¾®è½¯é›…é»‘";
+}
+
+.consignee-holder .consignee-list li label span {
+	padding: 0 2px;
+}
+
+.consignee-holder .info-collect {
+	padding: 10px 10px 10px 13px;
+}
+
+.J_addressEdit {
+	display: none;
+}
+
+.consignee-holder .info-collect .control-group {
+	margin-bottom: 13px;
+	padding-left: 67px;
+}
+
+.consignee-holder .info-collect .control-label {
+	width: 67px;
+}
+
+.consignee-holder .info-collect .address {
+	width: 480px;
+}
+
+.consignee-holder .info-collect .form-action {
+	padding-left: 67px;
+}
+
+.delivery-method-holder {
+	padding: 10px 18px 15px 44px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.delivery-method-holder .delivery-method-list {
+	padding-left: 16px;
+	line-height: 30px;
+}
+
+.delivery-method-list li {
+	position: relative;
+	zoom: 1;
+	padding-left: 19px;
+}
+
+.delivery-method-holder input {
+	position: absolute;
+	display: block;
+	width: 13px;
+	height: 13px;
+	left: 0px;
+	top: 7px;
+}
+
+.delivery-method-holder label {
+	display: inline-block;
+	width: 277px;
+}
+
+.delivery-method-holder .costs {
+	display: inline-block;
+	width: 162px;
+}
+
+
+
+.delivery-method-holder .costs b {
+	font-weight: lighter;
+}
+
+.delivery-method-holder .time-select {
+	color: #666;
+}
+
+.delivery-method-holder .time-select select {
+	color: #666;
+}
+
+.pay-method-holder {
+	border: 1px solid #EAEAEA;
+	padding: 10px 18px 15px 44px;
+}
+
+.pay-method-holder .pay-list {
+	padding-left: 16px;
+	line-height: 30px;
+}
+
+.pay-method-holder .pay-list li {
+	position: relative;
+	zoom: 1;
+	min-height: 30px;
+	_height: 30px;
+	padding-left: 19px;
+}
+
+.pay-list label span {
+	padding-left: 10px;
+}
+
+.pay-method-holder li .pay-radio {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 13px;
+	height: 13px;
+}
+
+.pay-method-holder .online-pay-holder {
+	padding-left: 20px;
+}
+
+.pay-method-holder .online-pay-holder h3 {
+	height: 30px;
+	font-weight: normal;
+}
+
+.pay-method-holder .online-pay-holder li {
+	float: left;
+	width: 170px;
+	height: 33px;
+	margin-bottom: 12px;
+	padding-left: 0;
+}
+
+.pay-method-holder .online-pay-holder li input {
+	float: left;
+	width: 13px;
+	height: 13px;
+	margin: 10px 5px;
+}
+
+.pay-method-holder .online-pay-holder li label {
+	display: block;
+	float: left;
+	height: 33px;
+}
+
+
+.stockout-holder {
+	border-bottom: 1px solid #EAEAEA;
+	padding: 10px 18px 15px 44px;
+}
+
+.stockout-holder .stockout-list {
+	padding-left: 16px;
+}
+
+.stockout-holder li {
+	min-height: 30px;
+	_height: 30px;
+	line-height: 30px;
+}
+
+.book-table-holder {
+	padding: 10px 18px 15px 44px;
+}
+
+.book-table-holder .book-table {
+	width: 100%;
+}
+
+.book-table-holder .book-table th {
+	height: 30px;
+	background: #E6E6E6;
+	font-weight: normal;
+}
+
+.book-table-holder .book-table td {
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+}
+
+.book-table-holder tfoot td, .book-table-holder tbody td {
+	border-bottom: 1px solid #ECECEC;
+}
+
+.book-table-holder tbody th:last-child {
+	border-bottom: 1px solid red;
+}
+
+.book-table-holder .book-table .book-id {
+	width: 95px;
+	text-align: center;
+}
+
+.book-table-holder .book-table .book-name a {
+	color: #146FC2;
+	text-decoration: none;
+}
+
+.book-table-holder .book-table .book-name a:hover {
+	text-decoration: underline;
+}
+
+.book-table-holder .book-table .book-discount, .book-table-holder .book-table .wl-price
+	{
+	width: 100px;
+	text-align: right;
+}
+
+.book-table-holder .book-table .book-credit {
+	width: 100px;
+	text-align: center;
+}
+
+.book-table-holder .book-table .book-amount {
+	width: 140px;
+	text-align: center;
+}
+
+.book-table-holder .book-table .total-price-holder {
+	position: relative;
+	zoom: 1;
+	border-top: 1px solid #ECECEC;
+	padding: 10px 50px 40px 500px;
+	text-align: right;
+}
+
+.book-table-holder .book-table .total-price-holder .price {
+	display: inline-block;
+	width: 64px;
+}
+
+.book-table-holder .additional-function {
+	position: absolute;
+	left: 6px;
+	top: 10px;
+	width: 100px;
+}
+
+.book-table-holder .additional-function a {
+	display: block;
+	height: 15px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	background: url(../../img/mall/jia.png) left center no-repeat;
+	text-align: left;
+	line-height: 15px;
+	color: #106EC5;
+}
+
+.book-table-holder .book-table .total-price-holder .price {
+	color: #333;
+}
+.gift-table {
+	width: 100%;
+}
+
+.td-gift-check {
+	text-align: right;
+}
+
+.td-gift-no, .td-gift-price, .td-gift-balance {
+	text-align: center;
+}
+
+.btnUse {
+	padding: 3px 5px;
+	background-color: #dddddd;
+	border: solid 1px #c0c0c0;
+}
+
+a.btnUse:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+
+.J_messageBox textarea {
+	max-width: 213px;
+}
+
+.pay-holder .submit-order {
+	padding: 0px 68px 0 0px;
+	text-align: right;
+	font-weight: bolder;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.pay-holder .submit-order .price {
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.pay-holder .submit-order button {
+	width: 143px;
+	height: 38px;
+	margin: 15px 0 20px;
+	border: none;
+	background: url(../../img/mall/btn-submitorder.png) left top no-repeat;
+	text-indent: -10000px;
+}
+
+.success-content {
+	position: relative;
+	height: 260px;
+	margin: 0 9px 0 9px;
+	border: 2px solid #146EC4;
+	padding: 40px 50px 64px 163px;
+	background: url(../../img/mall/bg-order-success.png) 113px 45px
+		no-repeat;
+	color: #333;
+}
+
+.success-content_1 {
+	position: relative;
+	height: 365px;
+	margin: 0 9px 0 9px;
+	border: 2px solid #146EC4;
+	color: #333;
+}
+
+.wx_code {
+	float: left;
+	padding-top: 30px;
+	margin-left: 30px;
+	width: 33%;
+}
+
+.wx_code_text {
+	float: left;
+	padding-top: 55px;
+	width: 60%;
+}
+
+.wx_code_text_1 {
+	margin-top: 20px;
+}
+
+.success-content h2 {
+	font-family: 'MicroSoft Yahei';
+	font-size: 18px;
+}
+
+.success-content .order-num {
+	color: #656565;
+	font-size: 14px;
+}
+
+.success-content p {
+	line-height: 30px;
+}
+
+.success-content .order-num .price {
+	font-weight: bolder;
+}
+
+.success-content .pay-attention {
+	padding-left: 20px;
+	background: url(https://www.wl.cn/resources/img/mall/lamp.png) -2px center no-repeat;
+	color: #656565;
+	line-height: 50px;
+}
+
+.success-content sub {
+	display: block;
+	width: 500px;
+	margin: 10px 0 15px;
+	border: none;
+	border-top: 1px dashed #EAEAEA;
+	font-size: 0px;
+	line-height: 0;
+}
+
+.success-content .order-cancel-tip {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	width: 903px;
+	height: 64px;
+	border-top: 1px solid #eaeaea;
+	line-height: 60px;
+}
+
+.success-content .order-cancel-tip a {
+	color: #136ec2;
+}
+
+.success-content .selected-pay-method {
+	color: #888;
+}
+
+.success-content .selected-pay-method p {
+	height: 33px;
+	line-height: 33px;
+}
+
+.success-content .selected-pay-method span, .success-content .selected-pay-method a
+	{
+	display: inline-block;
+	height: 34px;
+	vertical-align: middle;
+}
+
+.success-content .selected-pay-method span {
+	width: 120px;
+}
+
+.success-content .selected-pay-method .reselect {
+	margin-left: 15px;
+	color: #136ec2;
+}
+
+.success-content .selected-pay-method .form-action {
+	margin-top: 32px;
+	padding-left: 127px;
+}
+
+.success-content .selected-pay-method .pay-now {
+	display: block;
+	width: 100px;
+	height: 32px;
+	border: 0;
+	background: url(../../img/mall/pay-now-lg.png) left top no-repeat;
+	text-indent: -10000px;
+}
+
+.recharge-tip {
+	margin: 2px 0 0;
+	border-top: 1px solid #FFBE98;
+	border-bottom: 1px solid #FFBE98;
+	padding: 20px 50px;
+	background: #FFFCE1;
+}
+
+.recharge-tip h2 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.recharge-holder {
+	border: none;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.recharge-holder h2 {
+	padding-left: 50px;
+	border-bottom: 1px solid #EAEAEA;
+	line-height: 35px;
+}
+
+.recharge-holder .pay-list {
+	margin-left: 11px;
+	padding-left: 0;
+}
+
+.recharge-holder .pay-list h3 {
+	line-height: 30px;
+}
+
+.recharge-holder .online-pay-holder ul {
+	margin-top: 10px;
+}
+
+.recharge-holder .recharge-next-wrapper {
+	padding-left: 50px;
+}
+
+.recharge-holder .btn-recharge-next {
+	display: block;
+	zoom: 1;
+	width: 81px;
+	height: 31px;
+	margin: 10px 0;
+	border: none;
+	padding-bottom: 25px;
+	background: url(../../img/mall/btn-recharge-next.png) center center
+		no-repeat;
+	text-indent: -100000px;
+}
+
+.recharge-pay-tip {
+	padding: 25px 120px;
+	background: url(../../img/mall/gou.png) 50px 25px no-repeat;
+}
+
+.recharge-pay-tip h2 {
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.go-to-pay {
+	border-top: 1px solid #F6BF96;
+	border-bottom: 1px solid #F6BF96;
+	padding: 15px 0;
+	background: #FFFCE1;
+}
+
+.go-to-pay h2 {
+	border-bottom: 1px solid #F0EBD8;
+	padding-left: 50px;
+	color: #666;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.go-to-pay .selected-bank {
+	margin: 10px 0;
+	padding-left: 50px;
+}
+
+.go-to-pay .reselect-pay-corp {
+	display: inline-block;
+	height: 33px;
+	margin-left: 15px;
+	color: #136ec2;
+	line-height: 33px;
+}
+
+.go-to-pay .selected-bank .bank-icon {
+	display: inline-block;
+	width: 131px;
+	height: 33px;
+	vertical-align: top;
+}
+
+.go-to-pay .pay-now {
+	display: inline-block;
+	width: 82px;
+	height: 32px;
+	margin: 20px 0 30px 50px;
+	border: none;
+	background: url(../../img/mall/pay-now.png) center center no-repeat;
+	text-indent: -10000px;
+}
+
+.pay-qa {
+	padding: 20px 50px 35px;
+}
+
+.pay-qa h2 {
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.pay-qa p {
+	color: #666;
+}
+
+.pay-qa .question {
+	margin-top: 15px;
+	font-weight: bolder;
+}
+.collectMessageBox {
+	height: 60px;
+	margin-top: 60px;
+	background: url("../../img/mall/logsuc.gif") 39px 0 no-repeat;
+}
+
+.collectMessageBox p {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.collectMessageBox a {
+	display: block;
+	margin-top: 10px;
+	color: #666666;
+	text-decoration: none;
+	text-align: center;
+}
+
+.J_delBox {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+.modal {
+	display: none;
+	position: absolute;
+	top: 5px;
+	left: 141px;
+	width: 250px;
+	padding-bottom: 1em;
+	background-color: #fff;
+	border: 1px solid #ACACAC;
+	z-index: 1000;
+}
+
+.modal h4 {
+	height: 18px;
+	line-height: 18px;
+	padding: 2px 15px;
+	background-color: #F3F3F3;
+	font-size: 12px;
+	text-align: left;
+}
+
+.modal h4 a {
+	float: right;
+	display: block;
+	font-size: 14px;
+	font-family: tahoma;
+}
+
+.modal p {
+	line-height: 15px;
+	margin-bottom: 0;
+	padding: 10px 15px 0;
+	color: #666;
+	text-align: left;
+}
+
+.modal p.tips {
+	line-height: 18px;
+}
+
+.modal p .text, .modal p select, .modal p textarea {
+	width: 150px;
+	padding: 3px;
+	border: 1px solid #ACACAC;
+}
+
+.modal p textarea {
+	height: 4em;
+	width: 210px;
+}
+
+.modal p.btnRow {
+	text-align: right;
+}
+
+.modal .btn {
+	display: inline-block;
+	line-height: 1;
+	padding: 3px 5px;
+	background-color: #999999;
+	color: #fff;
+}
+
+.modal a.btn:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.verify_err_tips {
+	display: inline-block;
+	line-height: 20px;
+	background-color: #FFECEC;
+	border: 1px solid #F34956;
+	color: #CC0000;
+}
+
+.pay-success {
+	padding-top: 50px;
+	padding-bottom: 95px;
+	height: 268px;
+	background: url("../../img/mall/bg-order-success.png") no-repeat scroll
+		113px 64px transparent
+}
+
+.pay-success h2 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #333333;
+	height: 50px;
+	line-height: 50px;
+}
+
+.pay-success .order-num {
+	height: 33px;
+	line-height: 33px;
+}
+
+.pay-success .back-link {
+	width: 500px;
+	border-bottom: 1px dashed #eaeaea;
+	padding-top: 6px;
+	line-height: 45px;
+}
+
+.pay-success .back-link a {
+	color: #2378c6;
+}
+
+.pay-success .back-link a:hover {
+	text-decoration: none;
+}
+
+.pay-success .order-cancel-tip {
+	height: 31px;
+	width: 856px;
+	line-height: 31px;
+	bottom: 62px;
+	padding-left: 36px;
+}
+
+.racharge-success {
+	padding: 40px 0 57px 130px;
+	background: url("../../img/mall/recharge-success-yes-bg.png") no-repeat
+		scroll 72px 47px #FFFCE1;
+}
+
+.racharge-success h3 {
+	line-height: 32px;
+	font-size: 18px;
+	color: #333333;
+}
+
+.racharge-success .price {
+	font-size: 16px;
+}
+
+.racharge-success p {
+	line-height: 67px;
+}
+
+.racharge-success p a {
+	color: #136ec2;
+}
+
+.return-toCart {
+	width: 90px;
+	display: block;
+	color: #0080ff;
+	font-size: 12px;
+	font-family: å®‹ä½“;
+	text-decoration: none;
+	float: right;
+}
+
+.return-toCart:link, .return-toCart:hover, .return-toCart:active,
+	.return-toCart:visited {
+	text-decoration: none;
+}
+
+.check-address-error-img {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("https://www.wl.cn/resources/img/mall/lamp.png");
+	background-size: 100%;
+}
+
+.check-address-error-msg {
+	display: inline-block;
+	color: #DF1B04;
+	line-height: 30px;
+}

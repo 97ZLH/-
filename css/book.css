@@ -1,0 +1,561 @@
+/* 列表页 */
+* html, * html body {
+	background-image: url(about:blank);
+	background-attachment: fixed
+}
+
+a {
+	cursor: pointer;
+}
+
+.sort-infor.box-shadow {
+	padding-top: 0;
+}
+
+.sort-infor {
+	float: left;
+	width: 190px;
+	border-bottom: 1px solid #E0E0E0;
+	background: #ffffff;
+}
+
+.sort-infor h1 {
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	background: #f6f6f6;
+	text-align: center;
+	overflow: hidden;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.bookClassify, .sellers {
+	overflow: hidden;
+	padding-bottom: 25px;
+}
+.bookClassify{
+	display: none;
+}
+.sellers-item {
+	margin-top: 10px;
+}
+
+.sellers-img {
+	width: 139px;
+	height: 139px;
+	margin: 0 auto;
+	border: 1px solid #e8e8e8;
+}
+
+.sellers-img a {
+	display: block;
+	width: 127px;
+	height: 127px;
+	margin: 6px;
+}
+/* .sellers-img img{
+	display: block;
+	width: 95px;
+	height: 127px;
+	margin: 0 auto;
+} */
+.sellers-detail {
+	width: 144px;
+	margin: 10px auto;
+	overflow: hidden;
+	color: #666666;
+}
+
+.sellers-detail a {
+	display: inline-block;
+	overflow: hidden;
+	height: 2.3em;
+}
+
+.sellers-price {
+	width: 109px;
+	height: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.sellers-price span {
+	font-size: 14px;
+}
+
+.historical-item {
+	width: 170px;
+	height: 65px;
+	margin: 10px auto 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.historical-img {
+	float: left;
+	width: 54px;
+	height: 50px;
+	padding: 2px 0;
+	border: 1px solid #dddddd;
+}
+
+.historical-img img {
+	display: block;
+	height: 50px;
+	max-width: 48px;
+	margin: 0 auto;
+}
+
+.historical-detail {
+	float: left;
+	width: 100px;
+	height: 34px;
+	margin-left: 10px;
+	overflow: hidden;
+	color: #666666;
+}
+
+.historical-price {
+	float: left;
+	margin-left: 10px;
+}
+
+.empty-history {
+	width: 170px;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	text-align: right;
+}
+
+.show-all-sort {
+	width: 170px;
+	height: 25px;
+	line-height: 35px;
+	overflow: hidden;
+	text-align: right;
+}
+
+.empty-history a, .show-all-sort a {
+	color: #666666;
+}
+
+.book-infor {
+	float: right;
+	width: 786px;
+	background-color: #ffffff;
+}
+
+.search-null {
+	background: #fff;
+}
+
+.page .footer-tips.box-shadow {
+	padding-top: 30px;
+}
+
+.search-null-sort {
+	width: 186px;
+	padding-right: 4px;
+	background: url("https://www.wl.cn/resources/img/mall/list-bar.gif") right top repeat-y;
+}
+
+.byPrice, .byDiscount {
+	height: 32px;
+	padding-left: 4px;
+	margin-left: 12px;
+	line-height: 32px;
+	overflow: hidden;
+	font-weight: bold;
+	color: #333333;
+}
+
+.byPrice {
+	border-bottom: 1px dashed #e0e0e0;
+}
+
+.byPrice span, .byDiscount span {
+	margin: 0 15px 0 3px;
+	padding: 1px;
+	font-weight: lighter;
+	cursor: pointer;
+}
+
+.byPrice span.active, .byDiscount span.active {
+	background: #367CB4;
+	color: #ffffff;
+}
+
+.terms-sort {
+	height: 33px;
+	margin: 10px 0 0 10px;
+	padding: 3px 8px 0 8px;
+	color: #333333;
+	border: 1px solid #d6d6d6;
+	border-top: 2px solid #2BA2E6;
+}
+
+.terms-sort .sort-classfiy {
+	float: left;
+	margin-top: 2px;
+}
+
+.sort-classfiy a, .sort-classfiy p {
+	display: block;
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 7px;
+	border: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+
+.terms-sort .sort-classfiy p .list-pic, .terms-sort .sort-classfiy p .list-text
+	{
+	display: block;
+	width: 0;
+	height: 0;
+	float: left;
+	padding: 10px 7px;
+	_padding: 3px 7px;
+	border: none;
+	cursor: pointer;
+}
+
+.sort-classfiy>a:hover {
+	text-decoration: none;
+}
+
+.sort-classfiy>a.active {
+	border: 1px solid #EA701D;
+	background-color: #f4f4f4;
+	background-position: 90% 4px;
+	border-radius: 4px;
+}
+/*.terms-sort table{
+	float: left;
+	margin-top: 2px;
+}
+.terms-sort td{
+	height: 22px;
+	line-height: 22px;
+	padding: 0 7px;
+	border: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+.terms-sort td.active{
+	border: 1px solid #EA701D;
+	background-color: #f4f4f4;
+	background-position: 90% 4px;
+}*/
+.terms-sort .up {
+	padding: 0 15px 0 5px;
+	background-image: url("https://www.wl.cn/resources/img/mall/up.png");
+	background-position: 90% -32px;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+}
+
+.terms-sort .down {
+	padding: 0 15px 0 5px;
+	background-image: url("https://www.wl.cn/resources/img/mall/down.png");
+	background-position: 90% -32px;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+}
+
+.terms-sort .check {
+	position: relative;
+	top: 3px;
+	_top: -1px;
+	*top: -1px;
+}
+
+a[order], .sort-stock {
+	margin-right: 10px;
+}
+
+.terms-sort a label {
+	position: relative;
+	top: 0;
+	_top: -3px;
+	*top: -3px;
+}
+
+.list-pic {
+	width: 9px;
+	height: 9px;
+	background: url("https://www.wl.cn/resources/img/mall/list-pic.gif") 50% 50% no-repeat;
+}
+
+.list-text {
+	width: 9px;
+	height: 9px;
+	background: url("https://www.wl.cn/resources/img/mall/list-text.gif") 50% 50% no-repeat;
+}
+
+.list-pic-n {
+	background: url("../../img/mall/list-pic-n.gif") 50% 50% no-repeat;
+}
+
+.list-text-n {
+	background: url("../../img/mall/list-text-n.gif") 50% 50% no-repeat;
+}
+
+.terms-sort .gap {
+	float: left;
+}
+
+.list-select {
+	color: #f4f4f4;
+}
+
+.jump {
+	float: right;
+}
+
+.jump a {
+	display: block;
+	float: left;
+	padding: 15px 12px;
+	*padding: 10px 12px;
+	background: url("https://www.wl.cn/resources/img/mall/dot.gif") 0 50% no-repeat;
+}
+
+.jump a.left {
+	padding: 15px 9px;
+	*padding: 10px 9px;
+	background: url("https://www.wl.cn/resources/img/mall/left.gif") 0 50% no-repeat;
+}
+
+.jump a.right {
+	padding: 15px 9px;
+	*padding: 10px 9px;
+	background: url("https://www.wl.cn/resources/img/mall/right.gif") 0 50% no-repeat;
+}
+
+.search-book-list {
+	padding: 0 19px 0 14px;
+	margin-left: 9px;
+	border-bottom: 1px solid #f4f4f4;
+	margin-top: 5px;
+}
+
+.search-book-item {
+	float: left;
+	width: 184px;
+	padding: 25px 0;
+	border: solid 1px white;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.search-book-item:hover {
+	border: solid 1px #D1D1D1;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff),
+		to(#F5F5F5));
+	background: -moz-linear-gradient(top, #ffffff 15%, #ffffff 50%, #F5F5F5);
+}
+
+.search-book-img {
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+}
+/* .search-book-img img{
+	display: block;
+	height: 158px;
+	max-width: 112px;
+	margin: 0 auto;
+} */
+.search-book-detail {
+	width: 170px;
+	height: 53px;
+	margin: 10px auto;
+	overflow: hidden;
+	color: #1A66B3;
+}
+
+.search-book-price {
+	width: 170px;
+	height: 20px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.search-book-price span {
+	font-weight: lighter;
+}
+
+.search-book-price span {
+	font-family: 'å®‹ä½“';
+	font-weight: lighter;
+}
+
+.buy-btn {
+	display: block;
+	float: left;
+	width: 73px;
+	height: 23px;
+	background: url("https://www.wl.cn/resources/img/mall/buy-btn.gif") no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.buy-btn-gray {
+	display: block;
+	float: left;
+	width: 73px;
+	height: 23px;
+	background: url("https://www.wl.cn/resources/img/mall/buy-btn-grey.gif") no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.save-btn {
+	display: block;
+	float: right;
+	width: 69px;
+	height: 23px;
+	background: url("https://www.wl.cn/resources/img/mall/save-btn.gif") no-repeat;
+	border: none;
+}
+
+.search-book-item .btn {
+	width: 152px;
+	height: 23px;
+	margin: 0 auto;
+}
+
+.bookList-text {
+	position: relative;
+	height: 182px;
+}
+
+.bookList-text-img {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #e6e6e6;
+}
+/*.bookList-text-img img{
+	display: block;
+	height: 140px;
+	max-width: 112px;
+	width: 112px;
+	margin: 5px auto;
+}*/
+.bookList-text-title {
+	display: block;
+	position: absolute;
+	left: 179px;
+	top: 13px;
+	width: 576px;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	color: #1A66B3;
+	font-size: 14px;
+	border-bottom: 1px dashed #E0E0E0;
+}
+
+.bookList-text-infor {
+	position: absolute;
+	left: 179px;
+	top: 54px;
+	width: 579px;
+	/* 	height: 1em; */
+	overflow: hidden;
+	color: #666666;
+}
+
+.bookList-text-infor a {
+	color: #1a66b3;
+}
+
+.bookList-text-author {
+	position: absolute;
+	left: 179px;
+	top: 54px;
+	margin-right: 7px;
+	color: #666666;
+}
+
+.bookList-text-author em {
+	padding-right: 7px;
+	color: #1A66B3;
+}
+
+.bookList-text-publish {
+	margin: 0 10px;
+	color: #333333;
+}
+
+.bookList-text-isbn {
+	margin: 0 10px;
+	color: #333333;
+}
+
+.bookList-text-time {
+	margin: 0 10px;
+	color: #333333;
+}
+
+.bookList-text-detail {
+	display: block;
+	position: absolute;
+	left: 179px;
+	top: 85px;
+	width: 579px;
+	height: 5em;
+	overflow: hidden;
+	color: #666666;
+	text-indent: 2em;
+}
+
+.word-red {
+	color: #D70000;
+	font-weight: bold;
+}
+
+.bookList-text-price {
+	position: absolute;
+	left: 179px;
+	top: 137px;
+	width: 579px;
+	height: 20px;
+	overflow: hidden;
+	color: #333333;
+}
+
+.bookList-text-price .red em {
+	font-weight: lighter;
+
+}
+
+
+.bookList-text-btn {
+	position: absolute;
+	left: 610px;
+	top: 134px;
+	width: 151px;
+}
+
+.page .padding-t-0 {
+	padding-top: 0;
+}
+
+
+#categoriesTree li span.button {
+	background-image: url("https://www.wl.cn/resources/img/mall/zTreeStandard.png");
+}
+
+#categoriesTree li span.button.center_docu, #categoriesTree li span.button.center_docu,
+	#categoriesTree li span.button.bottom_docu {
+	display: none;
+}

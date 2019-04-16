@@ -1,0 +1,380 @@
+/* 主页 */
+.margin-t-6{
+	margin-top: -6px;
+}
+.padding-top-22{
+	padding-top: 22px;
+}
+.img-block-plate{
+	width: 740px;
+	height: 132px;
+	padding-top: 7px;
+	padding-left: 3px;
+	background: url("https://www.wl.cn/resources/img/mall/img-block-top.gif") left top no-repeat;
+}
+.img-block{
+	float: left;
+	position: relative;
+	height: 132px;
+	background-color: #fff;
+	zoom: 1;
+}
+.img-block1{
+	width: 239px;
+	padding-right: 7px;
+	background: url("https://www.wl.cn/resources/img/mall/img-tuan-right.gif") right top no-repeat;
+}
+.img-block1 img{
+	width: 239px;
+	height: 131px;
+}
+.img-block2{
+	width: 240px;
+	padding-right: 7px;
+	background: url("https://www.wl.cn/resources/img/mall/flashsale-right.gif") right top no-repeat;
+}
+.img-block2 img{
+	width: 240px;
+	height: 131px;
+}
+.img-block3{
+	width: 244px;
+}
+.img-block img{
+	display: block;
+}
+.img-flashsale,.img-tuan,.img-notice{
+	display: block;
+	position: absolute;
+	right: 7px;
+	bottom: 0px;
+	width: 82px;
+	height: 65px;
+	z-index: 50;
+}
+.img-notice{
+	right: 4px;
+}
+.img-flashsale{
+	background: url("https://www.wl.cn/resources/img/mall/tuan-block.png") no-repeat;
+}
+.img-tuan{
+	background: url("https://www.wl.cn/resources/img/mall/block-flashsale.png") no-repeat;
+	_background: url("../../img/mall/block-flashsale.gif") no-repeat;
+}
+.img-notice{
+	background: url("https://www.wl.cn/resources/img/mall/block-notice.png") no-repeat;
+	_background: url("../../img/mall/block-notice.gif") no-repeat;
+}
+.flashsale{
+	width: 740px;
+	height: 373px;
+	_height: 369px;
+	padding-top: 10px;
+	background: url("https://www.wl.cn/resources/img/mall/flashsale-top.jpg") left top no-repeat;
+	background-color: #fff;
+}
+.page .container .main-bottom{
+	padding-top: 16px;
+	margin-top: 0;
+}
+.page .container .main-bottom i{
+	height: 24px;
+	background: url("https://www.wl.cn/resources/img/mall/mian-bottom.gif") no-repeat;
+}
+.flash-sale-recommend-plate a{
+	display: inline-block;
+	width: 218px;
+	height: 89px;
+	border: 1px solid #e4e4e4;
+}
+.flash-sale-recommend-plate .plate-img1{
+	margin-left: 23px;
+	margin-right: 11px;
+}
+.flash-sale-recommend-plate .plate-img3{
+	margin-left: 11px;
+}
+.flash-sale-recommend-plate a img{
+	display: block;
+	width: 213px;
+	height: 86px;
+	margin: 1px auto;
+}
+.new-books,.editor-choice,.bargain-price,.famous,.periodicals-magazines{
+	float: left;
+	width: 730px;
+	background: #ffffff;
+}
+.hot-rank-list,.periodicals-magazines{
+	height: 525px;
+}
+.periodicals-magazines .book-list{
+	margin-left: 12px;
+}
+.hot-rank-list2,.bargain-price{
+	height: 433px;
+}
+.editor-choice,.hot-rank-list3{
+	height: 520px;
+}
+.new-books,.presell{
+	height: 526px;
+}
+.new-books .book-list{
+	padding-left: 12px;
+	padding-top: 8px;
+}
+.editor-choice .book-list{
+	padding-left: 12px;
+}
+.presell,.hot-rank-list,.hot-topic{
+	padding-right: 4px;
+}
+.presell,.hot-rank-list,.hot-topic{
+	position: relative;
+	float: right;
+	width: 246px;
+	background: #ffffff;
+}
+.rank-more{
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+}
+.editor-choice .book-list,.presell .presell-plate,.bargain-price .book-list{
+	margin-top: 10px;
+}
+.presell-plate{
+	height: 476px;
+	border-left: 1px solid #e4e4e4;
+	padding-left: 7px;
+	overflow:hidden;
+}
+.presell-plate img{
+	width: 237px;
+}
+.presell-plate a{
+	display: block;
+	width: 237px;
+}
+
+.hot-sort .active{
+	color: #333333;
+	background: url("https://www.wl.cn/resources/img/mall/hot-active.gif") no-repeat;
+}
+.hot-list,.hot-sort{
+	border-left: 1px solid #e4e4e4;
+	padding-left: 8px;
+}
+.hot-list{
+	position: relative;
+	padding-left: 4px;
+	margin-top: 0;
+	height: 340px;
+}
+div .J_hot-block{
+	height:412px;
+}
+.hot-rank-list4 .hot-list{
+	margin-top: 8px;
+	height: 424px;
+}
+.hot-sort{
+	margin-bottom: 0;
+}
+.hot-list,.hot-sort li{
+	cursor: pointer;
+}
+.hot-list a:hover{
+    text-decoration:none;
+}
+.bargain-price-plate a{
+	width: 210px;
+	height: 104px;
+}
+.bargain-price-plate a img{
+	width: 207px;
+	height: 104px;
+}
+.bargain-price-plate .bargain-price-plate-img1{
+	margin-left: 23px;
+	margin-right: 13px;
+}
+.bargain-price-plate .bargain-price-plate-img3{
+	margin-left: 13px;
+}
+.hot-topic-plate{
+	width: 238px;
+	margin: 0 0 0 7px;
+}
+.hot-topic-plate li{
+	float: left;
+	width: 218px;
+	height: 188px;
+	padding: 9px;
+	margin-top: 12px;
+	background: #e2f1ee;
+}
+.hot-topic-plate li img{
+	width: 218px;
+	height: 188px;
+}
+.famous,.hot-topic{
+	height: 494px;
+}
+.famous .book-list{
+	margin-top: 5px;
+	margin-left: 12px;
+}
+.index-flashsale .plate-title{
+	margin-bottom: 5px;
+	margin-left: 2px;
+}
+.index-flashsale .book-list{
+	padding-left: 15px;
+}
+.index-flashsale .plate-title h3{
+	padding-left: 15px;
+}
+
+.index-flashsale .plate-title h2{
+	padding-left: 15px;
+}
+
+.flash-sale-recommend-plate{
+	margin-top: 13px;
+}
+.bargain-price .book-list{
+	padding-left: 12px;
+}
+.bargain-price-plate{
+	margin-top: 28px;
+} 
+
+.main-news{
+	float: right;
+	width: 750px;
+	height: 819px;
+	background:#fff url("https://www.wl.cn/resources/img/mall/mian-news-right.gif") right top no-repeat;
+}
+.imgPlayer{
+	width: 728px;
+	height: 266px;
+	padding: 10px 6px 6px 6px;
+	/* background: url("../images/728x266海报-2.jpg") left top no-repeat; */
+	background-color: #fff;
+	overflow: hidden; 
+}
+#J_img{
+	overflow: hidden;
+	position: absolute;
+}
+#J_img li {
+position: absolute;
+}
+
+#focus {
+	height: 20px;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
+#focus span {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: gray;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 3px;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 25px;
+	color: white;
+	font-weight: 700;
+}
+
+#focus span.active {
+	background: red;
+}
+
+
+/* #J_img .index-holder a{
+	display: block;
+  float: left;
+  width: 29px;
+  height: 29px;
+  line-height: 29px;
+  margin: 0 2px;
+  padding: 0;
+  background: url("https://www.wl.cn/resources/img/mall/index1.png") no-repeat;
+  border: none;
+  color: #fcf5f5;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+#J_img .index-holder a.active {
+  background: url("https://www.wl.cn/resources/img/mall/index2.png") no-repeat;
+  border: none;
+  color: #fcf5f5;
+} */
+
+.flashsale-remain-time{
+	position: absolute;
+	left: 502px;
+	top: 0;
+	height: 32px;
+	width: 157px;
+}
+.flashsale-remain-time .title{
+	position: absolute;
+	left: -5px;
+	top: 11px;
+	color: #888;
+}
+.flashsale-remain-time p{
+	position: absolute;
+	left: 50px;
+	top: 6px;
+	height: 26px;
+	line-height: 26px;
+	color: #cc3300;
+	font-size: 20.38px;
+}
+.flashsale-remain-time p span{
+	float: left;
+	font-family: Impact, Arial;
+	font-weight: bolder;
+}
+
+.flashsale-pagination{
+	position: absolute;
+	left: 657px;
+	top: 11px;
+	height: 16px;
+	width: 76px;
+	overflow: hidden;
+}
+.flashsale-pagination a{
+	display: block;
+	float: left;
+	height: 16px;
+	width: 14px;
+	text-align: center;
+	color: #888;
+}
+.flashsale-pagination a.current{
+	color: #cc3300;
+}
+.flashsale-pagination a.prev{
+	width: 15px;
+	background: url("../images/prev.gif") no-repeat;
+}
+.flashsale-pagination a.next{
+	width: 15px;
+	background: url("../images/next.gif") no-repeat;
+}

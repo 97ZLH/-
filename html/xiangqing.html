@@ -1,0 +1,816 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+<meta charset="UTF-8">
+<meta name="Copyright" content="www.wl.cn 蔚蓝网" />
+  	<title>www.wl.cn 蔚蓝网</title>	
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/book-detail.css">
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/xiangqing.js"></script>
+    <!-- <script src="../js/common.js"></script> -->
+</head>
+<body>
+	<div class="page">
+		
+
+
+<style  type="text/css">
+.bookcount {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: #f1f1f1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #f1f1f1;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #f1f1f1;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #f1f1f1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: #b0b0b0;
+    height: 59px;
+    left: 770px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 7px;
+    position: absolute;
+    width: 190px;
+
+}
+</style>
+ <div class="header">
+    <div class="header-box" style="height:32px; width: 100%; box-shadow:2px 2px 2px rgb(240, 240, 240);margin-bottom:14px;">
+            <div class="header-tips clearfix" >
+        
+                    <div class="tips">
+                            <a onclick="addfavorite('')" href="javascript:;" rel="nofollow">收藏蔚蓝</a>
+        
+        
+        
+                            <span>您好，欢迎来到蔚蓝网！</span>
+        
+        
+                            <span>
+        
+        
+                                请[<a 
+                                    href="denglu.html" rel="nofollow">登录</a>]
+                                [<a href="zhuce.html" rel="nofollow">免费注册</a>]
+        
+        
+                            </span>
+                        </div>
+                        <div class="links clearfix">
+                            <a class="cartAccount clearfix" title="" rel="nofollow"> <em>购物车</em>
+                                <span></span> <em>件</em>
+                            </a> <a href="" rel="nofollow">我的蔚蓝</a> <a
+                                href="" rel="nofollow">图书批发</a>
+                            <a href="" target="_blank">图书馆</a>
+                            <a href="" rel="nofollow">帮助中心</a>
+                            <div class="links-div">
+                                <span>客户服务</span>
+                                <ul class="client-serve">
+        
+                                    <li><a href="" target="_blank" rel="nofollow">意见建议 </a>
+                                    </li>
+                                    <li><a href="" target="_blank" rel="nofollow">蔚蓝公告 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+           
+        </div>
+    </div>
+    
+    <div class="header-search clearfix">
+        <a href="" class="logo"> <img src="../images/logo.png"
+                alt="欢迎来到蔚蓝"></a>
+        <div class="search-input clearfix">
+            <form action="" class="search-box">
+                <input autocomplete="off" class="J_searchText" type="text" name="keywords" value style="border:2px solid rgb(76,178,244);">
+                <button class="J_searchBtn" type="submit"></button>
+
+                <p>
+                    <a href="" class="advanced-search">高级搜索</a> <span>热门搜索：</span>
+
+                    <a target="_blank" href="liebiao.html">说话技巧</a>
+
+                    <a target="_blank" href="liebiao.html">我是大医生</a>
+
+                    <a target="_blank"
+                        href="liebiao.html">牛津高阶</a>
+
+                    <a target="_blank" href="liebiao.html">金一南</a>
+
+                    <a target="_blank"
+                        href="liebiao.html">秘密花园</a>
+
+
+                </p>
+
+            </form>
+
+            <div class="search-view-list">
+                <ul>
+                    <li class="view-li"></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="bookcount"><br>
+            <font style="font-weight:bold; font-size:16px;color:#6b6b6b;">共有图书</font>
+            <font style="font-weight:bold;font-size:18px;color:blue;">3243420</font>
+            <font style="font-weight:bold;font-size:16px;color:#6b6b6b;">种</font><br>
+        </div>
+    </div>
+
+    <div class="header-nav">
+        <div class="main-nav">
+            <h2 class="all-categories"
+               >全部商品分类</h2>
+            <ul>
+
+
+                <li class="current"><a href="">首页</a></li>
+
+
+
+                <li class="nav-bar"></li>
+
+
+
+                <li><a href="">图书</a></li>
+
+
+                <li class="nav-bar"></li>
+
+
+
+                <li><a href="">特价</a></li>
+
+
+                <li class="nav-bar"></li>
+
+
+
+                <li><a href="">团购</a></li>
+
+
+                <li class="nav-bar"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="cart">
+    <div class="notNullCart"></div>
+</div>
+  		
+
+
+
+<div class="container box-shadow">
+<div class="box-content">
+<!--{面包屑 Start}-->
+<div class="crumbs">
+    <a href="https://www.wl.cn/index">蔚蓝网</a>
+    
+        <span>>&nbsp;</span><a href="https://www.wl.cn/c1">图书</a>
+    
+    <span>&gt;</span>
+    <a href="javascript:;" class="current">商品详情</a>
+</div>
+<!--{面包屑 end}-->
+
+<!--{图书详细信息 Start}-->
+<div class="content-wrapper sidebar-bg clearfix">
+	
+
+
+
+
+
+
+<div class="related-buy sidebar">
+    
+    
+    
+    
+    
+    
+    <div class="view-after-view col-2">
+        <h2>看过本商品的用户还看过</h2>
+        <ul>
+            <!--{view-after-view(买后买)循环 Start}-->
+            
+                <li>
+                    <a href="" target="_blank" class="cover-wrapper bk-img-box" title="-好妈妈不打不骂培养男孩300个细节">
+                        <img src="http://img.wl.cn/s2/8828/8398828/8398828.jpg" alt="-好妈妈不打不骂培养男孩300个细节">
+                    </a>
+                    <a href="" target="_blank" class="book-name" title="-好妈妈不打不骂培养男孩300个细节">-好妈妈不打不骂培养男孩300个细节</a>
+                    <span class="common-price">¥19.60</span>
+                </li>
+            
+                <li>
+                    <a href="" target="_blank" class="cover-wrapper bk-img-box" title="-好妈妈不娇不惯培养女孩300个细节        （好妈妈胜过好老师+如何说孩子才会听怎么听孩子才肯说。不娇不惯，微博微信热议的家教话题。这是一本有勇气、有思想、有智慧的女孩教养书，龙应台尹建莉杨澜孙瑞雪黑幼龙等都在谈，给中国父母巨大帮助）">
+                        <img src="http://img.wl.cn/s2/8830/8398830/8398830.jpg" alt="-好妈妈不娇不惯培养女孩300个细节        （好妈妈胜过好老师+如何说孩子才会听怎么听孩子才肯说。不娇不惯，微博微信热议的家教话题。这是一本有勇气、有思想、有智慧的女孩教养书，龙应台尹建莉杨澜孙瑞雪黑幼龙等都在谈，给中国父母巨大帮助）">
+                    </a>
+                    <a href="" target="_blank" class="book-name" title="-好妈妈不娇不惯培养女孩300个细节        （好妈妈胜过好老师+如何说孩子才会听怎么听孩子才肯说。不娇不惯，微博微信热议的家教话题。这是一本有勇气、有思想、有智慧的女孩教养书，龙应台尹建莉杨澜孙瑞雪黑幼龙等都在谈，给中国父母巨大帮助）">-好妈妈不娇不惯培养女孩300个细节        （好妈妈胜过好老师+如何说孩子才会听怎么听孩子才肯说。不娇不惯，微博微信热议的家教话题。这是一本有勇气、有思想、有智慧的女孩教养书，龙应台尹建莉杨澜孙瑞雪黑幼龙等都在谈，给中国父母巨大帮助）</a>
+                    <span class="common-price">¥19.60</span>
+                </li>
+            
+                <li>
+                    <a href="" target="_blank" class="cover-wrapper bk-img-box" title="不懂浪漫的男朋友">
+                        <img src="http://img.wl.cn/s2/4518/8794518/8794518.jpg" alt="不懂浪漫的男朋友">
+                    </a>
+                    <a href="" target="_blank" class="book-name" title="不懂浪漫的男朋友">不懂浪漫的男朋友</a>
+                    <span class="common-price">¥25.80</span>
+                </li>
+            
+                <li>
+                    <a href="" target="_blank" class="cover-wrapper bk-img-box" title="易中天品读中国（2018全新修订版，套装全6册，百万，二十年经典）">
+                        <img src="http://img.wl.cn/s2/3737/9103737/9103737.jpg" alt="易中天品读中国（2018全新修订版，套装全6册，百万，二十年经典）">
+                    </a>
+                    <a href="" target="_blank" class="book-name" title="易中天品读中国（2018全新修订版，套装全6册，百万，二十年经典）">易中天品读中国（2018全新修订版，套装全6册，百万，二十年经典）</a>
+                    <span class="common-price">¥169.70</span>
+                </li>
+            
+                <li>
+                    <a href="" target="_blank" class="cover-wrapper bk-img-box" title="实用育儿全书">
+                        <img src="http://img.wl.cn/s2/3504/7723504/7723504.jpg" alt="实用育儿全书">
+                    </a>
+                    <a href="" target="_blank" class="book-name" title="实用育儿全书">实用育儿全书</a>
+                    <span class="common-price">¥60.50</span>
+                </li>
+            
+            <!--{view-after-view(买后买)循环 End}-->
+        </ul>
+        
+    </div>
+    
+    
+    
+    
+    <div class="hot col-2">
+        <h2>该分类热销推荐</h2>
+        <ul>
+            <!--{热门分类循环 Start}-->
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="暴风雨">
+                    <img src="http://img.wl.cn/s2/9161/6729161/6729161.jpg" alt="暴风雨">
+                </a>
+                <a href="" target="_blank" class="book-name" title="暴风雨">暴风雨</a>
+                <span class="common-emprice">¥14.10</span>
+
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="失落的家园（22周蝉联《纽约时报》书排行榜前三 亿万心灵漂泊者的寻根之旅）">
+                    <img src="http://img.wl.cn/s2/8701/7028701/7028701.jpg" alt="失落的家园（22周蝉联《纽约时报》书排行榜前三 亿万心灵漂泊者的寻根之旅）">
+                </a>
+                <a href="" target="_blank" class="book-name" title="失落的家园（22周蝉联《纽约时报》书排行榜前三 亿万心灵漂泊者的寻根之旅）">失落的家园（22周蝉联《纽约时报》书排行榜前三 亿万心灵漂泊者的寻根之旅）</a>
+                <span class="common-emprice">¥23.00</span>
+
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="哈姆莱特">
+                    <img src="http://img.wl.cn/s2/9160/6729160/6729160.jpg" alt="哈姆莱特">
+                </a>
+                <a href="" target="_blank" class="book-name" title="哈姆莱特">哈姆莱特</a>
+                <span class="common-emprice">¥16.30</span>
+
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="读者文摘精华:顿悟卷">
+                    <img src="http://img.wl.cn/s2/8174/8138174/8138174.jpg" alt="读者文摘精华:顿悟卷">
+                </a>
+                <a href="" target="_blank" class="book-name" title="读者文摘精华:顿悟卷">读者文摘精华:顿悟卷</a>
+                <span class="common-emprice">¥18.30</span>
+
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="福尔摩斯探案集（升级版）（全十册）">
+                    <img src="http://img.wl.cn/s2/3118/8463118/8463118.jpg" alt="福尔摩斯探案集（升级版）（全十册）">
+                </a>
+                <a href="" target="_blank" class="book-name" title="福尔摩斯探案集（升级版）（全十册）">福尔摩斯探案集（升级版）（全十册）</a>
+                <span class="common-emprice">¥53.70</span>
+
+            </li>
+            
+            <!--{热门分类循环 End}-->
+        </ul>
+    </div>
+    
+    
+    
+    
+    <div class="view-history col-2">
+        <h2>您的浏览历史</h2>
+        <ul>
+            <!--{浏览历史循环 Start}-->
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="概率和鞅">
+                    <img src="http://img.wl.cn/s2/422/9160422/9160422.jpg" alt="概率和鞅">
+                </a>
+                <a href="" target="_blank" class="book-name" title="概率和鞅">概率和鞅</a>
+                <span class="common-price">¥48.00</span>
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="斯米尔诺夫高等数学:第五卷:第二分册:Volume Ⅴ:2">
+                    <img src="http://img.wl.cn/s2/5537/9185537/9185537.jpg" alt="斯米尔诺夫高等数学:第五卷:第二分册:Volume Ⅴ:2">
+                </a>
+                <a href="" target="_blank" class="book-name" title="斯米尔诺夫高等数学:第五卷:第二分册:Volume Ⅴ:2">斯米尔诺夫高等数学:第五卷:第二分册:Volume Ⅴ:2</a>
+                <span class="common-price">¥68.00</span>
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="斯米尔诺夫高等数学:第五卷:第一分册:Volume Ⅴ:1">
+                    <img src="http://img.wl.cn/s2/5579/9185579/9185579.jpg" alt="斯米尔诺夫高等数学:第五卷:第一分册:Volume Ⅴ:1">
+                </a>
+                <a href="" target="_blank" class="book-name" title="斯米尔诺夫高等数学:第五卷:第一分册:Volume Ⅴ:1">斯米尔诺夫高等数学:第五卷:第一分册:Volume Ⅴ:1</a>
+                <span class="common-price">¥58.00</span>
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="斯米尔诺夫高等数学:第三卷:第三分册:Volume Ⅲ:3">
+                    <img src="http://img.wl.cn/s2/3220/9173220/9173220.jpg" alt="斯米尔诺夫高等数学:第三卷:第三分册:Volume Ⅲ:3">
+                </a>
+                <a href="" target="_blank" class="book-name" title="斯米尔诺夫高等数学:第三卷:第三分册:Volume Ⅲ:3">斯米尔诺夫高等数学:第三卷:第三分册:Volume Ⅲ:3</a>
+                <span class="common-price">¥68.00</span>
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="斯米尔诺夫高等数学:第三卷:第二分册:Volume Ⅲ:2">
+                    <img src="http://img.wl.cn/s2/5581/9185581/9185581.jpg" alt="斯米尔诺夫高等数学:第三卷:第二分册:Volume Ⅲ:2">
+                </a>
+                <a href="" target="_blank" class="book-name" title="斯米尔诺夫高等数学:第三卷:第二分册:Volume Ⅲ:2">斯米尔诺夫高等数学:第三卷:第二分册:Volume Ⅲ:2</a>
+                <span class="common-price">¥58.00</span>
+            </li>
+            
+            <li>
+                <a href="" target="_blank" class="cover-wrapper bk-img-box" title="斯米尔诺夫高等数学:第三卷:第一分册:Volume Ⅲ:1">
+                    <img src="http://img.wl.cn/s2/5580/9185580/9185580.jpg" alt="斯米尔诺夫高等数学:第三卷:第一分册:Volume ssssssssssssssⅢ:1">
+                </a>
+                <a href="" target="_blank" class="book-name" title="斯米尔诺夫高等数学:第三卷:第一分册:Volume Ⅲ:1">斯米尔诺夫高等数学:第三卷:第一分册:Volume Ⅲ:1</a>
+                <span class="common-price">¥58.00</span>
+            </li>
+            
+            <!--{浏览历史循环 End}-->
+        </ul>
+        <a href="javascript:;" class="clear-history">清空历史</a>
+    </div>
+    
+    
+</div>
+
+
+<div class="book-info content-holder">
+
+    <!-- <div id="books-essential " style="position:relative;width:790px;float:left;zoom:1;"></div>   -->
+    <div class="book-essential-info"></div>
+<!--{书籍基本信息 End}-->   
+ 
+<!--{书籍扩展信息 Start}-->
+<div class="book-ext-info" >
+<div id="J_tabPlaceHolder" class="tab-place-holder">
+    <!--nothing,用于bookTab的占位-->
+</div>
+<ul id="J_bookTab" class="book-tab clearfix" >
+    <li id="J_detailTab" class="panel-detail current"><a href="javascript:;">商品详情</a></li>
+    <li id="J_commentTab" class="panel-comment"><a href="javascript:;">商品评论</a></li>
+    <li id="J_qaTab" class="panel-qa"><a href="javascript:;">商品问答</a></li>
+    <li id="J_shiduTab" class="panel-qa ba_readbtn" ba_readIsbn="9787540481551" style="display:none">
+    	<a href="javascript:;">试读</a>
+    </li>
+    
+    <!-- <li id="J_assTab" class="panel-ass"><a href="javascript:;">售后服务</a></li> -->
+</ul>
+<!--{商品详细 Start}-->
+<div id="J_DC" class="detail-content">
+    
+    <!--{编辑推荐 Start}-->
+    
+    <div class="detail-item-wrapper">
+        <h2>编辑推荐</h2>
+        <div class="desp-content">
+        	<div class="book-contents J_bookContents">
+           		<span id="abstract-all"></span> 继《蔡康永的说话之道》4,000,000册后，康永哥再次为读者奉上“内心强大之道”。读情商课，告别隐忍与委屈，游刃有余地处理人际关系，加速驶入人生的超车道。 <br> 华语世界的情商大神蔡康永全新力作。康永哥的高情商，对外表现为世事洞明、人情练达，对内则表现为内心自洽，平静愉悦。既不委屈自己，又不伤害别人，让自己开心，也让世界开心。 <br> 如果你不愿被愤怒、悲伤、沮丧、嫉妒等负面情绪控制，如果你希望在彰显自己时不冒犯别人，照顾他人时不委屈自己，如果你想在职场和情场都如鱼得水，如果你希望摆脱小透明、边缘人的标签，请打开《蔡康永的情商课》。读情商课，告别委屈和隐忍，经营好爱情和友情，从此加速驶入人生超车道。 <br> <br>  读点情商小故事，学点心理硬知识。零基础无门槛的情商急救手册，用故事讲道理，趣味十足，干货满满，图文并茂，金句频出。一组带你欢笑、感叹、落泪，同时又能学到实用技巧、飞速提升自我的情商课程。 <br> 将深邃的道理用清浅的语言、有趣的故事和呆萌可爱的插图表达出来，兼具趣味性、知识性与实用性，干货满满，带你在欢笑中学习心理学。 <br> 康永哥以认知心理学方面的学术观点作理论根基，回应的都是真实而具体的生活场景。他化繁为简，在课程中提炼出了5种核心能力，包括：情绪管理力、个性塑造、态度养成、领导力，以及个人魅力。你在社交、家庭、爱情和职场等所有场合，能遇到的所有你认为与情商相关的困惑，都可以通过这5种能力得到化解。 <br> <br>  开启中国式情商课程先河，设身处地教你为人处世的学问和人际沟通的技巧。 <br> 读了很多情商课，却还管理不好情商？ <br> 你可能找错了老师。 <br> 西方专家学者的情商理论，生搬硬套到中国人的文化氛围和成长背景中，难免水土不服。马东认为：“情商难学，只有康永哥能教。康永哥*是我认识的人中，*有能力和讲情商课的人。” <br> 世事洞明皆学问，人情练达即文章。康永哥的收放自如，源于他多年的江湖历练。一颗玲珑剔透心 数十载社交实战经验 ZUI专业的情绪管理技巧。康永哥亲自拆解令受众如沐春风的秘密，结合朋友圈里的真实生活案例，分类解读，每一课都有一个看得到的小收获，是你能马上拿来能用的小技巧。&nbsp;&nbsp;
+           	</div>
+           <a href="javascript:;" class="J_contentsTrigger dir-ctrl unfold"></a>
+        </div>
+    </div>
+    
+    <!--{编辑推荐 End}-->
+    <!--{内容简介 Start}-->
+    
+    <div class="detail-item-wrapper">
+        <h2>内容简介</h2>
+        <div class="desp-content">
+        	<div class="book-contents J_bookContents">
+                <p></p>
+                <p>情商是什么？ <br /><br>在蔡康永看来，情商，是人应对一切关系的能力总和，而情商真正的意义，在于愉快地做自己。我们训练情商，不是为了扭曲自己去讨人喜欢，而是为了做情绪的主人。康永哥的高情商，对外表现为世事洞明、人情练达，对内则表现为平静愉悦，内心自洽。让自己开心的同时，也让世界开心。只有想得通透，才能活得痛快。拥有高情商的人，可以让自我活得更加舒适，不会陷入负面情绪中无法自拔，进而在爱情、亲情、友情中，都能更好地经营一段舒服的关系。 <br /><br><br /><br>那么，情商应该怎么学？ <br /><br>康永哥的每一堂课程，都有认知心理学方面的学术观点作理论根基，但*关键的是，他回应的都是真实而具体的生活场景。康永哥化繁为简，在课程中提炼出了5种核心能力，包括：情绪管理力、个性塑造、态度养成、领导力，以及个人魅力。你在社交、家庭、爱情和职场等所有场合，能遇到的所有你认为与情商相关的困惑，都可以通过这5种能力得到化解。康永哥的情商课，教你的*不是屠龙之技、更不是课堂上背教科书，而是每一课都有一个看得到的小收获，是你能马上拿来能用的小技巧。 <br /><br><br /><br>如果你不愿被愤怒、悲伤、沮丧、嫉妒等负面情绪控制， <br /><br>如果你希望在彰显自己时不冒犯别人，照顾他人时不委屈自己， <br /><br>如果你想在职场和情场都如鱼得水， <br /><br>如果你希望摆脱小透明、边缘人的标签， <br /><br>《蔡康永的情商课》就是适合你的选择。?</p>
+            </div>
+            <a href="javascript:;" class="J_contentsTrigger dir-ctrl unfold" style="display: none;"></a>
+        </div>
+    </div>
+    
+    <!--{内容简介 End}-->
+
+    <!--{媒体评论 Start}-->
+    
+    <!--{媒体评论 End}-->
+    <!--{作者简介 Start}-->
+    
+    <!--{作者简介 End}-->
+
+    <!--{目录 Start}-->
+    
+    <div class="detail-item-wrapper">
+        <h2>目录</h2>
+        <div class="desp-content">
+            <div class="book-contents">
+            	<div class="book-contents J_bookContents">
+                    <p></p>
+                    <p> PART1 <br /><br>1. 你全身都贴满了“应该”的标签吗？／ 002 <br /><br>2. 面对自己的“感觉”，好像很害羞又很没面子？／ 012 <br /><br>3. 独处，一点都不孤单，还很有趣／ 019 <br /><br>4. 当局者迷时，要祭出分身大法／ 028 <br /><br>5. 让分身问你“为什么”，事情会变得不一样／ 037 <br /><br>6. 称职的分身，不会让你相抱取暖／ 044 <br /><br><br /><br>PART2 <br /><br>7. 对自己诚实，不然就等别人来唬你／ 050 <br /><br>8. 你是河，情绪是分秒流经你的水滴／ 058 <br /><br>9. 学校没教的入门知识，我们来自修／ 066 <br /><br>10. 表达情绪不是在展示权力／ 072 <br /><br>11. 快要失控前，拖时间冷却一下／ 080 <br /><br><br /><br>PART3 <br /><br>12.“负面”情绪，就像戏里的反派角色／ 088 <br /><br>13. 拒绝所有负面情绪的人， <br /><br>　　连吃火锅都只能吃到甜味／ 093 <br /><br>14.“负面”，你可以不理会它， <br /><br>　　它可不会不理你！／ 101 <br /><br>15. 与对错无关，与对你有什么意义很有关／ 108 <br /><br>16. 放下评断，领受人生这个礼物吧／ 114 <br /><br>17. 悲伤会强迫成长，失去会带来启发／ 119 <br /><br>18. 少问“为什么”，多问“怎么办”／ 127 <br /><br>19. 处理伤心事，要向战争片或动作片学习／138 <br /><br><br /><br>PART4 <br /><br>20. 别给情绪乱贴红黑标签／ 144 <br /><br>21. 用冰冻力，冻结熊熊怒火／ 149 <br /><br>22. 自卑，是来自脑中“理想的我”／ 160 <br /><br>23. 有助于“享受生命”的情绪，都很珍贵／ 170 <br /><br>24. 你有很多个面相，保证你自己也不知道／ 176 <br /><br>25. 后悔，驱使你活出更好的人生／ 183 <br /><br>26. 召唤力量、驱赶“空虚”的神奇咒语／ 190 <br /><br>27. 离开同温层，多交专门唱反调的朋友／ 205 <br /><br><br /><br>PART5 <br /><br>28. 没有“的幸福”，只有“我的幸福”／ 212 <br /><br>29. 生命，要用在自己真正在乎的事上／ 218 <br /><br>30. 醒醒吧，别再用阿Q 精神胜利法逃避现实／ 227 <br /><br>31. 尽了人事之后，才听天命／ 235 <br /><br>32. 把他人的否定切成小块，不要全盘接受／ 242 <br /><br>33. 获得幸福的机会，人人平等／ 247 <br /><br>34. 追剧，竟然可以同时训练情商／ 254 <br /><br>35.“你变了”？恭喜恭喜！／ 259 <br /><br>36. 别学愚公移山，只要移动念头即可／ 265 <br /><br>康永的致谢／ 272 <br /><br><br /></p>
+                </div>
+                <a href="javascript:;" class="J_contentsTrigger dir-ctrl unfold"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!--{目录 End}-->
+
+    <!--{前言 Start}-->
+    
+    <!--{前言 End}-->
+
+    <!--{摘要与插图 Start}-->
+    
+    <!--{摘要与插图 End}-->
+
+    <!--{主题词 Start}-->
+    
+    <!--{主题词 End}-->
+</div>
+<!--{商品详细 End}-->
+
+<!--{商品评论 Start}-->
+	
+
+
+
+<!--{商品评论 Start}-->
+	<div id="J_CC" class="comment-content">
+	    <!--{书籍评分 Start}-->
+	    <div class="score-holder clearfix">
+	        <div class="score">
+	            <p>
+	                <span class="score-percent">0.0<em class="prt-symbol">%</em></span>
+	                <span>好评度</span>
+	            </p>
+	            <p class="grade clearfix">
+	                
+	                    
+	                
+	                    
+	                
+	                    
+	                
+	                    
+	                
+	                    
+	                
+	            </p>
+	        </div>
+	        <div class="rating">
+	            <p>0人参与评分</p>
+	            <ul>
+	                <li class="clearfix">
+	                    <div>很好(5星，4星):</div>
+	                    <div class="energy-bar" id="J_rmdRate">
+	                        <span>0.0%</span>
+	                    </div>
+	                    <div class="percent">0.0%</div>
+	                </li>
+	                <li class="clearfix">
+	                    <div>一般(3星，2星):</div>
+	                    <div class="energy-bar" id="J_ordinaryRate">
+	                        <span>0.0%</span>
+	                    </div>
+	                    <div class="percent">0.0%</div>
+	                </li>
+	                <li class="clearfix">
+	                    <div>不推荐(1星):&nbsp;&nbsp;&nbsp;</div>
+	                    <div class="energy-bar" id="J_noRmdRate">
+	                        <span>0.0%</span>
+	                    </div>
+	                    <div class="percent">0.0%</div>
+	                </li>
+	            </ul>
+	        </div>
+	        <div class="score-text">
+	            <p>写购物评价，赢购物积分，可换购物券！好书不要私藏哦，分享给别人吧！</p>
+	            <a href="javascript:;">查看积分规则&gt;&gt;</a>
+	        </div>
+	        <div class="btn-add-comment">
+	            <a href="../html/denglu.html">发表评论</a>
+	        </div>
+	    </div>
+	    <!--{书籍评分 End}-->
+	
+	    
+	    
+	    
+	        
+	    
+	    
+	
+	    
+	</div>
+
+<!--{商品评论 End}-->
+<!--{商品评论 End}-->
+
+<!--{商品问答 Start}-->
+	
+
+
+
+<!--{商品评论 Start}-->
+<div id="J_QAC" class="qa-content">
+    <p class="qa-tip">
+        温馨提示：由于每位咨询者提问时间及蔚蓝网促销等不同原因，以下回复仅对提问者3天内有效，其他网友仅供参考！
+        <a href="../html/denglu.html" class="iwannaask">我要提问</a>
+    </p>
+    <ul class="qa-list">
+        
+        
+        
+            
+        
+        
+    </ul>
+    
+</div>
+<!--{商品评论 End}-->
+<!--{商品问答 End}-->
+
+<!--{售后服务 Start}-->
+<div id="J_ASSC" class="after-sale-service-content"></div>
+<!--{售后服务 End}-->
+</div>
+</div>
+<!--{书籍扩展信息 End}-->
+
+</div>
+<!--{图书详细信息 End}-->
+</div>
+
+<!--{弹出提示 Start}-->
+<div class="buy-popup" id="J_bookDetailPopup">
+    <h2 class="header" id="J_popupHeader">
+        <span>购物车提示</span>
+        <a class="close-trigger" id="J_closeTrigger" href="javascript:;">关闭</a>
+    </h2>
+    <div class="popup-content">
+        <!--{购买成功提示 Start}-->
+        <div id="J_buySuccessTip" class="cart-tip">
+            <h3 class="summary"> <span id="J_buyNum">1</span>件商品成功放入购物车</h3>
+           
+            <p class="btn-wrapper">
+                <a href="javascript:;" class="continue-buy" id="J_continueBuy">继续购物</a>
+                <a href="../html/car.html" class="pay-now" id="pay-now">去购物车结算</a>
+            </p>
+        </div>
+        <!--{购买成功提示 End}-->
+        <!--{再次购买提示 Start}-->
+        <!-- <div id="J_buyAgainTip" class="cart-tip">
+            <h3 class="summary">购物车中已有该商品</h3>
+            <p class="btn-wrapper">
+                <a href="javascript:;" class="buy-again" id="J_buyAgainCfm">再次购买</a>
+                <a href="../html/car.html" class="pay-now">去购物车结算</a>
+            </p>
+            
+                
+            
+        </div> -->
+        <!--{再次购买提示 End}-->
+
+        <!--{没有库存提示 Start}-->
+        <!-- <div id="J_stockoutTip" class="stockout-tip">
+            <h3 class="sub-header">
+                缺货登记
+                <a class="close-trigger" id="J_closeTrigger" href="javascript:;">关闭</a>
+            </h3>
+            <p class="tip-detail">非常报歉，本商品没有库存暂时无法购买，如果您仍需要该图书
+                请输入邮箱做缺货登记，到货后我们会给您发邮件通知。</p>
+            <form class="common-form" id="J_stockoutForm">
+                <label for="stockout-email">Email</label>
+                <input type="text" id="stockout-email">
+                <button class="smt-stockout-info" type="button">提交</button>
+            </form>
+        </div> -->
+        <!--{没有库存提示 End}-->
+        <!--{低库存提示 Start}-->
+        <!-- <form id="J_lowStockTip" class="low-stock-tip common-form">
+            <p class="tip-detail">非常抱歉，您购买的数量超过库存,当前最多可买<b id="J_rbn" class="remain-book-num">303</b>件，请您修改。</p>
+            <p class="btn-wrapper">
+                <button type="button" id="J_closeLowStockTip">确定</button>
+            </p>
+        </form> -->
+
+        <!--{低库存提示 End}-->
+    </div>
+</div>
+<!--{弹出提示 End}-->
+</div>
+<div style="height: 0; font-size: 0; line-height: 0;"></div>
+  		
+
+
+
+<div class="footer-tips box-shadow margin-t-6">
+	<i class="box-gap"></i>
+	<div class="box-content clearfix">
+		<div class="related-links">
+			
+				<div>
+					<h3>新手入门</h3>
+					
+				<a>帐户注册</a>
+					
+				<a>用户登录</a>
+					
+				<a>忘记密码</a>
+					
+				<a>会员积分</a>
+					
+				<a>会员级别</a>
+					
+				<a>收藏商品</a>
+					
+				<a>优惠券使用</a>
+					
+				<a>发表评论</a>
+					
+				<a>商品问答</a>
+					
+				</div>
+			
+				<div>
+					<h3>购物指南</h3>
+					
+						<a target="_blank" rel="nofollow" href="">购物步骤</a>
+					
+						<a target="_blank" rel="nofollow" href="">搜索商品</a>
+					
+						<a target="_blank" rel="nofollow" href="">商品缺货</a>
+					
+						<a target="_blank" rel="nofollow" href="">订单状态</a>
+					
+						<a target="_blank" rel="nofollow" href="">取消订单</a>
+					
+						<a target="_blank" rel="nofollow" href="">修改订单</a>
+					
+						<a target="_blank" rel="nofollow" href="">礼品卡使用</a>
+					
+						<a target="_blank" rel="nofollow" href="">团购商品</a>
+					
+						<a target="_blank" rel="nofollow" href="">发票制度</a>
+					
+				</div>
+			
+				<div>
+					<h3>配送方式</h3>
+					
+						<a target="_blank" rel="nofollow" href="">快递-款到发货</a>
+					
+						<a target="_blank" rel="nofollow" href="">EMS-邮政快递</a>
+					
+						<a target="_blank" rel="nofollow" href="">验货与签收</a>
+					
+						<a target="_blank" rel="nofollow" href="">发货时间</a>
+					
+						<a target="_blank" rel="nofollow" href="">到货时间</a>
+					
+						<a target="_blank" rel="nofollow" href="">超时未收到货情况</a>
+					
+						<a target="_blank" rel="nofollow" href="">快递-款到发货-新</a>
+					
+				</div>
+			
+				<div>
+					<h3>支付方式</h3>
+					
+						<a target="_blank" rel="nofollow" href="">在线支付</a>
+					
+						<a target="_blank" rel="nofollow" href="">银行转账</a>
+					
+						<a target="_blank" rel="nofollow" href="">邮局汇款</a>
+					
+						<a target="_blank" rel="nofollow" href="">礼品卡支付</a>
+					
+						<a target="_blank" rel="nofollow" href="">账户余额支付</a>
+					
+						<a target="_blank" rel="nofollow" href="">汇款到帐时间</a>
+					
+						<a target="_blank" rel="nofollow" href="">汇款确认</a>
+					
+				</div>
+			
+				<div>
+					<h3>售后服务</h3>
+					
+						<a target="_blank" rel="nofollow" href="">退换货政策</a>
+					
+						<a target="_blank" rel="nofollow" href="">退换货流程</a>
+					
+						<a target="_blank" rel="nofollow" href="">退款方式及时间</a>
+					
+						<a target="_blank" rel="nofollow" href="">退换货地址</a>
+					
+				</div>
+			 
+		</div>
+		<div class="follow-us">
+            <div>
+
+                <img src="../images/tel.jpg" alt="010-52200996 周一至周六 8:00-18:00">
+                <a href="" title="投诉信箱" rel="nofollow">
+	                <img src="../images/helpmember.gif" width="186" height="44" alt="投诉信箱" target="_blank">
+                </a>
+            </div>
+		</div>
+	</div>
+</div>
+  		
+<div class="footer">
+    <div class="footer_box">
+	<div class="footer-nav">
+		<span class="footer-icon1">正版保障</span>
+		<span class="footer-icon1" class="footer-icon2">满额免运</span>
+		<span class="footer-icon1" class="footer-icon3">货到付款</span>
+		<span class="footer-icon1" class="footer-icon4">品种全</span>
+		<span class="footer-icon1" class="footer-icon5">免费退换</span>
+    </div>
+    </div>
+	<div class="footer-links">
+		<a href="" rel="nofollow">关于我们</a>
+		<span>|</span>
+<!-- 		<a href="javascript:;">诚征英才</a> -->
+<!-- 		<span>|</span> -->
+		<a href="" rel="nofollow">销售联盟</a>
+		<span>|</span>
+		<a href="" rel="nofollow">图书批发</a>
+<!-- 		<span>|</span> -->
+<!-- 		<a href="javascript:;">联系我们</a> -->
+<!-- 		<span>|</span> -->
+
+		<span>|</span>
+		<a href="">友情链接</a>
+		<span>|</span>
+		<a href="" rel="nofollow">汇款单招领</a>
+	</div>
+	<p class="footer-copyright">
+		<span class="copyright">Copyright (C)2006-2013 蔚蓝网, All Rights Reserved</span>
+		<span>北京市公安局丰台分局备案编号：1101080539 京ICP证100411号 出版物经营许可证：京批100163号</span>
+	</p>
+	<div class="footer-certificate clearfix">
+		
+		<a href="" rel="nofollow" target="_blank" class="footer-certificate2"></a>
+	</div>
+</div>
+<!-- WPA Button Begin --> 
+ <!-- <script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA0MjI3OV8yMjg0OTdfODAwMDQyMjc5Xw"></script> --> 
+  <script defer="true" src="https://cs.wl.cn:443/im/4028838b5ac815e3015ac81645f90000.html"></script>   
+<!-- WPA Button End -->
+	</div>
+</body>
+</html>
+

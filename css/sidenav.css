@@ -1,0 +1,46 @@
+/*轮播图侧边导航栏*/
+.container .sidenav{
+	float:left;
+	width: 240px;
+	height: 819px;
+	padding: 0 0 0 8px;
+	margin-top: 0;
+	overflow: hidden;
+}
+.sidenav .box-content{
+	height: 819px;
+	padding: 0 10px 0 0;
+	background-color: #fff;
+	box-shadow: 3px 3px 3px 3px#ccc; 
+}
+.sidenav-content{
+	padding: 0 15px 0 15px;
+}
+.sidenav-content div{
+	padding: 5px 0 7px 6px;
+	border-bottom: 1px solid #d5ebfd;
+}
+.sidenav-content div.no-bd{
+	border-bottom: none;
+}
+.sidenav h2{
+	padding: 3px 0;
+}
+.sidenav h2 a{
+	color: #4c85b2;
+	text-decoration: none;
+}
+.sidenav p a{
+	display: block;
+	float: left;
+	padding: 0 0px 0 0;
+	color: #666666;
+	word-break: keep-all;
+}
+.sidenav span{
+	display: block;
+	float: left;
+	width: 13px;
+	color: #bfbfbf;
+	text-align: center;
+}
